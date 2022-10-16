@@ -1,0 +1,222 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            
+        }
+        h1,h2,h3{
+            
+            font-family: 'Poppins', sans-serif;
+        }
+        h2{
+            color:#958e8e;
+        }
+        .sidebar {
+            padding-top: 190px;
+  margin: 0;
+
+  width: 70px;
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size: 10px;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(41, 40, 40);
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 1px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 200px) {
+  .sidebar {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 200px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+        .skillcap{
+            border:4px;
+            height: 28px;
+            width: 1000px;
+            background-color: #1e1e1e;
+        }
+       
+        .ps{
+            
+            height: 28px;
+            width: 85px;
+            animation: moveleft 2s;
+            background-color: #555;
+        }
+        .c{
+            
+            height: 28px;
+            width: 80px;
+            animation: movec 2s;
+            background-color: #555;
+        }
+        .ae{
+            
+            height: 28px;
+            width: 65px;
+            animation: moveae 2s;
+            background-color: #555;
+        }
+        .jsp{
+            
+            height: 28px;
+            width: 50px;
+            animation: movejs 2s;
+            background-color: #555;
+        }
+        .education{
+            line-height: 3em;
+            padding-left: 300px;
+            padding-top:50px;
+        }
+        
+        @keyframes moveleft{
+0%{
+    width: 0%;
+}
+100%{
+    width: 85%;
+}
+        }
+        @keyframes movec {
+0%{
+    width: 0%;
+}
+100%{
+    width: 80%;
+}
+        }
+        @keyframes moveae {
+0%{
+    width: 0%;
+}
+100%{
+    width: 65%;
+}
+        }
+        @keyframes movejs {
+0%{
+    width: 0%;
+}
+100%{
+    width: 50%;
+}
+        }
+        @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1;  }
+}
+
+.skills{
+line-height: 3em;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.bars{
+    padding-left:300px;
+}
+
+</style>
+    <body>
+        <div class="sidebar">
+            <a href="resume.html"><i class="fa fa-home fa fa-3x"></i></a>
+            <a class="active" href="education.html"><i class="fa fa-book fa fa-3x"></i></a>
+            <a href="about.html"><i class="fa fa-user fa fa-3x"></i></a>
+            <a  href="contactme.html"><i class="fa fa-envelope fa fa-3x"></i></a>
+          </div>
+    <div class="education" style=" font-family: 'Poppins', sans-serif;">
+    <br>
+    <h1 class="educations" style="color:#f2f2f2;animation: fadeIn 2s; "><b>My Education:</b></h1>
+    <h2 class="secondaryed" style="color:#F0A500;animation: fadeIn 2s; ">Secondary Education:</h2>
+    <h3 style=" font-family: 'Poppins', sans-serif;color:#958e8e;animation: fadeIn 2s; ">CMI Public School, Chalakudy<br>Thrissur  680307</h3>
+    <h2 class="highersecondaryed" style="color:#F0A500;animation: fadeIn 2s; ">Higher Secondary Education:</h2>
+    <h3 style=" font-family: 'Poppins', sans-serif;color:#958e8e;animation: fadeIn 2s; ">Carmel Higher Secondary School, Chalakudy<br>Thrissur  680307</h3>
+    <h2 class="studyat" style="color:#F0A500;animation: fadeIn 2s; ">Currently Studying At:</h2>
+    <h3 style=" font-family: 'Poppins', sans-serif;color:#958e8e;animation: fadeIn 2s; ">Sahrdaya Colleger Of Enginering And Technology, Kodakara<br>Thrissur  680684</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+
+        <div class="bars">
+        <h1 style="color:#F0A500">My Skills</h1>
+        <h2>Photoshop</h2>
+        <div class="skillcap">
+        <div class="skillbox"><div class="ps" data-aos="fade-right" style="height:28px;width:85%"><center style="padding:2px; color:white;"><b>85%</b></center></div>
+        </div>
+        <br>
+        <h2>C++</h2>
+        <div class="skillcap" >
+        <div class="skillbox"><div class="c" data-aos="fade-right" style="height:28px;width:80%"><center style="padding:2px;; color:white;"><b>80%</b></center></div>
+        </div>
+        <br>
+       
+        <h2>After Effects</h2>
+        <div class="skillcap">
+        <div class="skillbox"><div class ="ae" data-aos="fade-right" style="height:28px;width:65%"><center style="padding:2px; color:white;"><b>65%</b></center></div>
+        </div>
+        <h2>Java</h2>
+        <div class="skillcap">
+        <div class="skillbox"><div class ="jsp" data-aos="fade-right" style="height:28px;width:50%"><center style="padding:2px; color:white;"><b>50%</b></center></div>
+        </div>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    </body>
+        
+</html>

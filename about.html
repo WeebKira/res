@@ -1,0 +1,160 @@
+<html>
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body {
+          
+            font-family: 'Poppins', sans-serif;
+            background-color: black;
+            font-size:16px;
+            padding-right:300px;
+        }
+        h2,h3{
+          font-size: 16px;
+        }
+        .title h1{
+            color:rgb(102, 102, 102);
+            margin-left:299px;
+        }
+        .title{
+            padding-top :160px;
+        }
+        .about{
+            line-height: 2.6em;
+            position: fixed;
+            left:-180px;
+        }
+
+        .sidebar {
+  margin: 0;
+  padding-top: 190px;
+  width: 70px;
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size: 10px;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(41, 40, 40);
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 1px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 200px) {
+  .sidebar {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 200px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1;  }
+}
+#myVideo {
+  position: fixed;
+  bottom:-250px;
+  right: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+    </style>
+    <body>
+      <video autoplay muted loop id="myVideo">
+        <source src="ballofi.mp4" type="video/mp4">
+      </video>
+              <div class="about" style=" font-family: 'Poppins', sans-serif;animation: fadeIn 2s; ">
+              <div class="title" style="font-family: 'Poppins', sans-serif">
+                <h1 styles=" font-family: 'Poppins', sans-serif;,color: #3d3d3d;animation: fadeIn 2s; ">About</h1>
+               </div>
+              <div class="content"style="padding-left:100px;color:white;animation: fadeIn 2s;font-size:20px; ">
+                <h2 style="font-family: 'Poppins', sans-serif;color:#ffffff;animation: fadeIn 2s;">Hi, My name is Kiran and I'm an aspiring programmer.<br>
+                    I am currently a student at Sahrdaya College of Engineering<br>
+                    and Technology and I am pursuing Computer Science major.<br>
+                    I really love watching anime and playing games.<br>
+                    My favorite anime are Inital D,Horimiya and My favorite <br>
+                    game is VALORANT.
+                </h2>
+            </div>
+        </div>
+        <div class="sidebar">
+          <a href="resume.html"><i class="fa fa-home fa fa-3x"></i></a>
+          <a href="education.html"><i class="fa fa-book fa fa-3x"></i></a>
+          <a class="active" href="about.html"><i class="fa fa-user fa fa-3x"></i></a>
+          <a  href="contactme.html"><i class="fa fa-envelope fa fa-3x"></i></a>
+        </div>
+
+        </div>
+        <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+    

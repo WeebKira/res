@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #191919;
+  line-height: 2.9;
+}
+h2{
+  font-size: 100px;
+}
+
+.sidebar {
+  padding-top: 190px;
+  margin: 0;
+
+  width: 70px;
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size: 10px;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #000000;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(41, 40, 40);
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 1px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 200px) {
+  .sidebar {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 200px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.logo{
+animation: movedown 1s linear 1;
+animation: fadeIn 3s; 
+animation-fill-mode: forwards;
+}
+.info{
+  animation: movedown1 1s linear 1;
+  animation: fadeIn 2s; 
+  font-size: 28px;
+  animation-fill-mode: forwards;
+  font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #f1f1f1;
+    line-height:0.1em;
+    letter-spacing: -2px;
+    
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1;  }
+}
+@keyframes movedown{
+  0%
+  {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%
+  {
+    transform : translateY(0);
+    visibility: visible;
+  }
+
+}
+@keyframes movedown1{
+  0%
+  {
+    transform: translateY(-20px);
+    visibility: visible;
+  }
+  100%
+  {
+    transform : translateY(0);
+    visibility: visible;
+  }
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+@keyframes exampleanim {
+  0%   {color: #953238;}
+  25%  {color: #9a644b;}
+  50%  {color: #91664f;}
+  100% {color: #897560;}
+}
+
+img{
+    border-radius:50%;
+    border-width: auto;
+    border-color: #818181;
+}
+
+    #myVideo {
+  position: fixed;
+  bottom:-250px;
+  right: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  font-size:36px;
+}
+.container {
+width: 100%;
+height: 100vh;
+padding-top: 132px;
+padding-left:13px;
+display:flex;
+align-items: left;
+justify-content: left;
+animation: fadeIn 1.5s;
+font-size:24px;
+}
+
+.kiran{
+  position: relative;
+  padding-left: 13px;
+  padding-top: 450px;
+  width: 100%;
+  height: 10%;
+animation: fadeIn 1.5s;
+}
+.auto-type{ 
+  animation: exampleanim 200s;
+  animation-iteration-count: infinite;
+}
+
+</style>
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="lofi-grad.mp4" type="video/mp4">
+  </video>
+
+  <div class="sidebar">
+    <a class="active" href="resume.html"><i class="fa fa-home fa fa-3x"></i></a>
+    <a href="education.html"><i class="fa fa-book fa fa-3x"></i></a>
+    <a href="about.html"><i class="fa fa-user fa fa-3x"></i></a>
+    <a href="contactme.html"><i class="fa fa-envelope fa fa-3x"></i></a>
+  </div>
+<div class="content" style=" font-family: 'Poppins', sans-serif;" >
+  <h2 class="kiran" style="line-height:5em;font-size:56px;">I'm Kiran</h2>
+<div class="container" style="font-family: 'Poppins', sans-serif;">
+  <h1 styles=" font-family: 'Poppins', sans-serif;font-size:24px;">I'm a <span class="auto-type"></h1>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".auto-type",{
+    strings: ["Web Developer","Student","Gamer","Programmer"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+  })
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 
